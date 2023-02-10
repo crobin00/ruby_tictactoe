@@ -11,6 +11,8 @@
 
 AllCops:
   NewCops: enable
+  Exclude:
+    - "spec/spec_helper.rb"
 
 Metrics/AbcSize:
   IgnoredMethods:
@@ -19,3 +21,7 @@ Metrics/AbcSize:
 Metrics/MethodLength:
   IgnoredMethods:
     - check_win
+
+Metrics/BlockLength:
+  Exclude:
+    - "spec/*"

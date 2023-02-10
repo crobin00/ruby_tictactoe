@@ -47,8 +47,6 @@ class Board
     false
   end
 
-  private
-
   def check_win
     WINNING.any? do |line|
       if line.all? { |winner| board[winner] == 'X' }
